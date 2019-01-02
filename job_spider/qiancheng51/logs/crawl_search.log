@@ -1,0 +1,291 @@
+2019-01-01 17:36:28,428 - crawl_search - INFO - now sleep 1s
+2019-01-01 17:37:11,286 - crawl_search - INFO - now sleep 2s
+2019-01-01 17:37:23,970 - crawl_search - INFO - get url: https://jobs.51job.com/chongqing/109275227.html?s=01&t=0
+2019-01-01 17:37:23,977 - crawl_search - INFO - ==> save url: https://jobs.51job.com/chongqing/109275227.html?s=01&t=0
+2019-01-01 17:37:23,984 - crawl_search - INFO - get url: https://jobs.51job.com/kunshan/109546562.html?s=01&t=0
+2019-01-01 17:37:23,997 - crawl_search - INFO - ==> save url: https://jobs.51job.com/kunshan/109546562.html?s=01&t=0
+2019-01-01 17:37:24,007 - crawl_search - INFO - get url: https://jobs.51job.com/jinan-tqq/96229401.html?s=01&t=0
+2019-01-01 17:37:24,018 - crawl_search - INFO - ==> save url: https://jobs.51job.com/jinan-tqq/96229401.html?s=01&t=0
+2019-01-01 17:37:24,026 - crawl_search - INFO - get url: https://jobs.51job.com/beijing-hdq/109519601.html?s=01&t=0
+2019-01-01 17:37:24,034 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing-hdq/109519601.html?s=01&t=0
+2019-01-01 17:37:24,041 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou/109133931.html?s=01&t=0
+2019-01-01 17:37:24,047 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou/109133931.html?s=01&t=0
+2019-01-01 17:37:24,054 - crawl_search - INFO - get url: https://jobs.51job.com/chongqing-naq/103376727.html?s=01&t=0
+2019-01-01 17:37:24,066 - crawl_search - INFO - ==> save url: https://jobs.51job.com/chongqing-naq/103376727.html?s=01&t=0
+2019-01-01 17:37:24,079 - crawl_search - INFO - get url: https://jobs.51job.com/chongqing-yzq/103379979.html?s=01&t=0
+2019-01-01 17:37:24,088 - crawl_search - INFO - ==> save url: https://jobs.51job.com/chongqing-yzq/103379979.html?s=01&t=0
+2019-01-01 17:37:24,096 - crawl_search - INFO - get url: https://jobs.51job.com/wuhan-jxq/109072058.html?s=01&t=0
+2019-01-01 17:37:24,103 - crawl_search - INFO - ==> save url: https://jobs.51job.com/wuhan-jxq/109072058.html?s=01&t=0
+2019-01-01 17:37:24,109 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai/109536809.html?s=01&t=0
+2019-01-01 17:37:24,116 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai/109536809.html?s=01&t=0
+2019-01-01 17:37:24,122 - crawl_search - INFO - get url: https://jobs.51job.com/hangzhou-yhq/109531465.html?s=01&t=0
+2019-01-01 17:37:24,135 - crawl_search - INFO - ==> save url: https://jobs.51job.com/hangzhou-yhq/109531465.html?s=01&t=0
+2019-01-01 17:37:24,144 - crawl_search - INFO - get url: https://jobs.51job.com/wuhan-dhxjs/109523306.html?s=01&t=0
+2019-01-01 17:37:24,152 - crawl_search - INFO - ==> save url: https://jobs.51job.com/wuhan-dhxjs/109523306.html?s=01&t=0
+2019-01-01 17:37:24,159 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-thq/109523090.html?s=01&t=0
+2019-01-01 17:37:24,167 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-thq/109523090.html?s=01&t=0
+2019-01-01 17:37:24,174 - crawl_search - INFO - get url: https://jobs.51job.com/changsha-ylq/109519779.html?s=01&t=0
+2019-01-01 17:37:24,181 - crawl_search - INFO - ==> save url: https://jobs.51job.com/changsha-ylq/109519779.html?s=01&t=0
+2019-01-01 17:37:24,187 - crawl_search - INFO - get url: https://jobs.51job.com/hangzhou-scq/109244504.html?s=01&t=0
+2019-01-01 17:37:24,194 - crawl_search - INFO - ==> save url: https://jobs.51job.com/hangzhou-scq/109244504.html?s=01&t=0
+2019-01-01 17:37:24,201 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-pdxq/109051048.html?s=01&t=0
+2019-01-01 17:37:24,214 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-pdxq/109051048.html?s=01&t=0
+2019-01-01 17:37:24,224 - crawl_search - INFO - get url: https://jobs.51job.com/nanchang/106654632.html?s=01&t=0
+2019-01-01 17:37:24,233 - crawl_search - INFO - ==> save url: https://jobs.51job.com/nanchang/106654632.html?s=01&t=0
+2019-01-01 17:37:24,240 - crawl_search - INFO - get url: https://jobs.51job.com/zhuhai/105666618.html?s=01&t=0
+2019-01-01 17:37:24,246 - crawl_search - INFO - ==> save url: https://jobs.51job.com/zhuhai/105666618.html?s=01&t=0
+2019-01-01 17:37:24,253 - crawl_search - INFO - get url: https://jobs.51job.com/qingdao/104459787.html?s=01&t=0
+2019-01-01 17:37:24,260 - crawl_search - INFO - ==> save url: https://jobs.51job.com/qingdao/104459787.html?s=01&t=0
+2019-01-01 17:37:24,267 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-byq/104308067.html?s=01&t=0
+2019-01-01 17:37:24,278 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-byq/104308067.html?s=01&t=0
+2019-01-01 17:37:24,288 - crawl_search - INFO - get url: https://jobs.51job.com/ningbo-gx/104135815.html?s=01&t=0
+2019-01-01 17:37:24,298 - crawl_search - INFO - ==> save url: https://jobs.51job.com/ningbo-gx/104135815.html?s=01&t=0
+2019-01-01 17:37:24,305 - crawl_search - INFO - get url: https://jobs.51job.com/changsha/103896040.html?s=01&t=0
+2019-01-01 17:37:24,311 - crawl_search - INFO - ==> save url: https://jobs.51job.com/changsha/103896040.html?s=01&t=0
+2019-01-01 17:37:24,318 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-xhq/102737602.html?s=01&t=0
+2019-01-01 17:37:24,325 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-xhq/102737602.html?s=01&t=0
+2019-01-01 17:37:24,331 - crawl_search - INFO - get url: https://jobs.51job.com/nanchang-hgt/101701206.html?s=01&t=0
+2019-01-01 17:37:24,337 - crawl_search - INFO - ==> save url: https://jobs.51job.com/nanchang-hgt/101701206.html?s=01&t=0
+2019-01-01 17:37:24,350 - crawl_search - INFO - get url: https://jobs.51job.com/wuhan-hsq/101369642.html?s=01&t=0
+2019-01-01 17:37:24,358 - crawl_search - INFO - ==> save url: https://jobs.51job.com/wuhan-hsq/101369642.html?s=01&t=0
+2019-01-01 17:37:24,365 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-thq/101032683.html?s=01&t=0
+2019-01-01 17:37:24,373 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-thq/101032683.html?s=01&t=0
+2019-01-01 17:37:24,380 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-xhq/100579220.html?s=01&t=0
+2019-01-01 17:37:24,387 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-xhq/100579220.html?s=01&t=0
+2019-01-01 17:37:24,395 - crawl_search - INFO - get url: https://jobs.51job.com/suzhou/97703007.html?s=01&t=0
+2019-01-01 17:37:24,402 - crawl_search - INFO - ==> save url: https://jobs.51job.com/suzhou/97703007.html?s=01&t=0
+2019-01-01 17:37:24,408 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen-nsq/92037566.html?s=01&t=0
+2019-01-01 17:37:24,420 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen-nsq/92037566.html?s=01&t=0
+2019-01-01 17:37:24,430 - crawl_search - INFO - get url: https://jobs.51job.com/beijing/104603751.html?s=01&t=0
+2019-01-01 17:37:24,438 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing/104603751.html?s=01&t=0
+2019-01-01 17:37:24,445 - crawl_search - INFO - get url: https://jobs.51job.com/nanjing-xwq/44947038.html?s=01&t=0
+2019-01-01 17:37:24,452 - crawl_search - INFO - ==> save url: https://jobs.51job.com/nanjing-xwq/44947038.html?s=01&t=0
+2019-01-01 17:37:24,459 - crawl_search - INFO - get url: https://jobs.51job.com/hefei-bhq/105668184.html?s=01&t=0
+2019-01-01 17:37:24,465 - crawl_search - INFO - ==> save url: https://jobs.51job.com/hefei-bhq/105668184.html?s=01&t=0
+2019-01-01 17:37:24,473 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen/101273348.html?s=01&t=0
+2019-01-01 17:37:24,480 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen/101273348.html?s=01&t=0
+2019-01-01 17:37:24,487 - crawl_search - INFO - get url: https://jobs.51job.com/beijing/107227480.html?s=01&t=0
+2019-01-01 17:37:24,699 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing/107227480.html?s=01&t=0
+2019-01-01 17:37:24,706 - crawl_search - INFO - get url: https://jobs.51job.com/kunshan/103060989.html?s=01&t=0
+2019-01-01 17:37:24,712 - crawl_search - INFO - ==> save url: https://jobs.51job.com/kunshan/103060989.html?s=01&t=0
+2019-01-01 17:37:24,719 - crawl_search - INFO - get url: https://jobs.51job.com/chongqing-ybq/103982292.html?s=01&t=0
+2019-01-01 17:37:24,726 - crawl_search - INFO - ==> save url: https://jobs.51job.com/chongqing-ybq/103982292.html?s=01&t=0
+2019-01-01 17:37:24,732 - crawl_search - INFO - get url: https://jobs.51job.com/nanjing-xwq/106811635.html?s=01&t=0
+2019-01-01 17:37:24,743 - crawl_search - INFO - ==> save url: https://jobs.51job.com/nanjing-xwq/106811635.html?s=01&t=0
+2019-01-01 17:37:24,749 - crawl_search - INFO - get url: https://jobs.51job.com/beijing/107068355.html?s=01&t=0
+2019-01-01 17:37:24,758 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing/107068355.html?s=01&t=0
+2019-01-01 17:37:24,776 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen-nsq/108835656.html?s=01&t=0
+2019-01-01 17:37:24,783 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen-nsq/108835656.html?s=01&t=0
+2019-01-01 17:37:24,790 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-ypq/108802435.html?s=01&t=0
+2019-01-01 17:37:24,797 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-ypq/108802435.html?s=01&t=0
+2019-01-01 17:37:24,809 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-thq/109514268.html?s=01&t=0
+2019-01-01 17:37:24,816 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-thq/109514268.html?s=01&t=0
+2019-01-01 17:37:24,822 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai/109510711.html?s=01&t=0
+2019-01-01 17:37:24,829 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai/109510711.html?s=01&t=0
+2019-01-01 17:37:24,835 - crawl_search - INFO - get url: https://jobs.51job.com/suzhou/105216093.html?s=01&t=0
+2019-01-01 17:37:24,842 - crawl_search - INFO - ==> save url: https://jobs.51job.com/suzhou/105216093.html?s=01&t=0
+2019-01-01 17:37:24,849 - crawl_search - INFO - get url: https://jobs.51job.com/nanjing-xwq/107769465.html?s=01&t=0
+2019-01-01 17:37:24,856 - crawl_search - INFO - ==> save url: https://jobs.51job.com/nanjing-xwq/107769465.html?s=01&t=0
+2019-01-01 17:37:24,863 - crawl_search - INFO - get url: https://jobs.51job.com/beijing-cpq/109317936.html?s=01&t=0
+2019-01-01 17:37:24,870 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing-cpq/109317936.html?s=01&t=0
+2019-01-01 17:37:24,877 - crawl_search - INFO - get url: https://jobs.51job.com/beijing/102873529.html?s=01&t=0
+2019-01-01 17:37:24,885 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing/102873529.html?s=01&t=0
+2019-01-01 17:37:24,891 - crawl_search - INFO - get url: https://jobs.51job.com/suzhou/109510514.html?s=01&t=0
+2019-01-01 17:37:24,898 - crawl_search - INFO - ==> save url: https://jobs.51job.com/suzhou/109510514.html?s=01&t=0
+2019-01-01 17:37:24,905 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-thq/109509195.html?s=01&t=0
+2019-01-01 17:37:24,912 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-thq/109509195.html?s=01&t=0
+2019-01-01 17:37:24,919 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-pyq/108951888.html?s=01&t=0
+2019-01-01 17:37:24,926 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-pyq/108951888.html?s=01&t=0
+2019-01-01 17:37:24,933 - crawl_search - INFO - get url: https://jobs.51job.com/chongqing-ybq/107934516.html?s=01&t=0
+2019-01-01 17:37:24,940 - crawl_search - INFO - ==> save url: https://jobs.51job.com/chongqing-ybq/107934516.html?s=01&t=0
+2019-01-01 17:37:24,990 - crawl_search - INFO - now sleep 0s
+2019-01-01 17:38:03,011 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen/96678337.html?s=01&t=0
+2019-01-01 17:38:03,017 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen/96678337.html?s=01&t=0
+2019-01-01 17:38:03,025 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-xhq/109428433.html?s=01&t=0
+2019-01-01 17:38:03,031 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-xhq/109428433.html?s=01&t=0
+2019-01-01 17:38:03,038 - crawl_search - INFO - get url: https://jobs.51job.com/xian-gxjs/98374888.html?s=01&t=0
+2019-01-01 17:38:03,046 - crawl_search - INFO - ==> save url: https://jobs.51job.com/xian-gxjs/98374888.html?s=01&t=0
+2019-01-01 17:38:03,053 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-yxq/93573389.html?s=01&t=0
+2019-01-01 17:38:03,059 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-yxq/93573389.html?s=01&t=0
+2019-01-01 17:38:03,067 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen-lgq/109501607.html?s=01&t=0
+2019-01-01 17:38:03,081 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen-lgq/109501607.html?s=01&t=0
+2019-01-01 17:38:03,088 - crawl_search - INFO - get url: https://jobs.51job.com/wuxi/100968053.html?s=01&t=0
+2019-01-01 17:38:03,094 - crawl_search - INFO - ==> save url: https://jobs.51job.com/wuxi/100968053.html?s=01&t=0
+2019-01-01 17:38:03,102 - crawl_search - INFO - get url: https://jobs.51job.com/changsha-frq/105147255.html?s=01&t=0
+2019-01-01 17:38:03,110 - crawl_search - INFO - ==> save url: https://jobs.51job.com/changsha-frq/105147255.html?s=01&t=0
+2019-01-01 17:38:03,118 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-hpq/109550201.html?s=01&t=0
+2019-01-01 17:38:03,126 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-hpq/109550201.html?s=01&t=0
+2019-01-01 17:38:03,132 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-hkq/107055010.html?s=01&t=0
+2019-01-01 17:38:03,139 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-hkq/107055010.html?s=01&t=0
+2019-01-01 17:38:03,146 - crawl_search - INFO - get url: https://jobs.51job.com/hefei/105467334.html?s=01&t=0
+2019-01-01 17:38:03,154 - crawl_search - INFO - ==> save url: https://jobs.51job.com/hefei/105467334.html?s=01&t=0
+2019-01-01 17:38:03,167 - crawl_search - INFO - get url: https://jobs.51job.com/shenyang-hpq/102154328.html?s=01&t=0
+2019-01-01 17:38:03,174 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenyang-hpq/102154328.html?s=01&t=0
+2019-01-01 17:38:03,183 - crawl_search - INFO - get url: https://jobs.51job.com/wuxi-lxq/109549876.html?s=01&t=0
+2019-01-01 17:38:03,195 - crawl_search - INFO - ==> save url: https://jobs.51job.com/wuxi-lxq/109549876.html?s=01&t=0
+2019-01-01 17:38:03,201 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-ypq/97271892.html?s=01&t=0
+2019-01-01 17:38:03,209 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-ypq/97271892.html?s=01&t=0
+2019-01-01 17:38:03,215 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-ypq/108685217.html?s=01&t=0
+2019-01-01 17:38:03,222 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-ypq/108685217.html?s=01&t=0
+2019-01-01 17:38:03,230 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-jaq/109548354.html?s=01&t=0
+2019-01-01 17:38:03,241 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-jaq/109548354.html?s=01&t=0
+2019-01-01 17:38:03,248 - crawl_search - INFO - get url: https://jobs.51job.com/dalian-shkq/103225681.html?s=01&t=0
+2019-01-01 17:38:03,254 - crawl_search - INFO - ==> save url: https://jobs.51job.com/dalian-shkq/103225681.html?s=01&t=0
+2019-01-01 17:38:03,261 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen-nsq/109546966.html?s=01&t=0
+2019-01-01 17:38:03,267 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen-nsq/109546966.html?s=01&t=0
+2019-01-01 17:38:03,274 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-mhq/109384880.html?s=01&t=0
+2019-01-01 17:38:03,280 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-mhq/109384880.html?s=01&t=0
+2019-01-01 17:38:03,287 - crawl_search - INFO - get url: https://jobs.51job.com/beijing/109236604.html?s=01&t=0
+2019-01-01 17:38:03,294 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing/109236604.html?s=01&t=0
+2019-01-01 17:38:03,300 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen-lhxq/109172144.html?s=01&t=0
+2019-01-01 17:38:03,307 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen-lhxq/109172144.html?s=01&t=0
+2019-01-01 17:38:03,314 - crawl_search - INFO - get url: https://jobs.51job.com/wuxi-lxq/107273874.html?s=01&t=0
+2019-01-01 17:38:03,321 - crawl_search - INFO - ==> save url: https://jobs.51job.com/wuxi-lxq/107273874.html?s=01&t=0
+2019-01-01 17:38:03,327 - crawl_search - INFO - get url: https://jobs.51job.com/hangzhou-xhq/105805314.html?s=01&t=0
+2019-01-01 17:38:03,334 - crawl_search - INFO - ==> save url: https://jobs.51job.com/hangzhou-xhq/105805314.html?s=01&t=0
+2019-01-01 17:38:03,341 - crawl_search - INFO - get url: https://jobs.51job.com/hangzhou-yhq/104108931.html?s=01&t=0
+2019-01-01 17:38:03,347 - crawl_search - INFO - ==> save url: https://jobs.51job.com/hangzhou-yhq/104108931.html?s=01&t=0
+2019-01-01 17:38:03,354 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-hzq/99533907.html?s=01&t=0
+2019-01-01 17:38:03,360 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-hzq/99533907.html?s=01&t=0
+2019-01-01 17:38:03,367 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen-lgq/99216362.html?s=01&t=0
+2019-01-01 17:38:03,374 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen-lgq/99216362.html?s=01&t=0
+2019-01-01 17:38:03,383 - crawl_search - INFO - get url: https://jobs.51job.com/jinan/96847719.html?s=01&t=0
+2019-01-01 17:38:03,391 - crawl_search - INFO - ==> save url: https://jobs.51job.com/jinan/96847719.html?s=01&t=0
+2019-01-01 17:38:03,400 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-hzq/96822021.html?s=01&t=0
+2019-01-01 17:38:03,412 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-hzq/96822021.html?s=01&t=0
+2019-01-01 17:38:03,421 - crawl_search - INFO - get url: https://jobs.51job.com/kunming-xsq/87976342.html?s=01&t=0
+2019-01-01 17:38:03,428 - crawl_search - INFO - ==> save url: https://jobs.51job.com/kunming-xsq/87976342.html?s=01&t=0
+2019-01-01 17:38:03,435 - crawl_search - INFO - get url: https://jobs.51job.com/beijing-cyq/81080274.html?s=01&t=0
+2019-01-01 17:38:03,444 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing-cyq/81080274.html?s=01&t=0
+2019-01-01 17:38:03,452 - crawl_search - INFO - get url: https://jobs.51job.com/shenyang-hnq/76092936.html?s=01&t=0
+2019-01-01 17:38:03,462 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenyang-hnq/76092936.html?s=01&t=0
+2019-01-01 17:38:03,469 - crawl_search - INFO - get url: https://jobs.51job.com/wenzhou/74394126.html?s=01&t=0
+2019-01-01 17:38:03,476 - crawl_search - INFO - ==> save url: https://jobs.51job.com/wenzhou/74394126.html?s=01&t=0
+2019-01-01 17:38:03,483 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-jaq/67025247.html?s=01&t=0
+2019-01-01 17:38:03,490 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-jaq/67025247.html?s=01&t=0
+2019-01-01 17:38:03,496 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen-nsq/105989686.html?s=01&t=0
+2019-01-01 17:38:03,507 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen-nsq/105989686.html?s=01&t=0
+2019-01-01 17:38:03,515 - crawl_search - INFO - get url: https://jobs.51job.com/dalian-shkq/95850856.html?s=01&t=0
+2019-01-01 17:38:03,522 - crawl_search - INFO - ==> save url: https://jobs.51job.com/dalian-shkq/95850856.html?s=01&t=0
+2019-01-01 17:38:03,529 - crawl_search - INFO - get url: https://jobs.51job.com/tangshan/102784653.html?s=01&t=0
+2019-01-01 17:38:03,539 - crawl_search - INFO - ==> save url: https://jobs.51job.com/tangshan/102784653.html?s=01&t=0
+2019-01-01 17:38:03,546 - crawl_search - INFO - get url: https://jobs.51job.com/kunshan/109546562.html?s=01&t=0
+2019-01-01 17:38:03,552 - crawl_search - INFO - ==> save url: https://jobs.51job.com/kunshan/109546562.html?s=01&t=0
+2019-01-01 17:38:03,559 - crawl_search - INFO - get url: https://jobs.51job.com/foshan-sdq/109546001.html?s=01&t=0
+2019-01-01 17:38:03,566 - crawl_search - INFO - ==> save url: https://jobs.51job.com/foshan-sdq/109546001.html?s=01&t=0
+2019-01-01 17:38:03,573 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen-nsq/109544820.html?s=01&t=0
+2019-01-01 17:38:03,579 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen-nsq/109544820.html?s=01&t=0
+2019-01-01 17:38:03,586 - crawl_search - INFO - get url: https://jobs.51job.com/jiangmen/109544307.html?s=01&t=0
+2019-01-01 17:38:03,594 - crawl_search - INFO - ==> save url: https://jobs.51job.com/jiangmen/109544307.html?s=01&t=0
+2019-01-01 17:38:03,601 - crawl_search - INFO - get url: https://jobs.51job.com/linyi/109543844.html?s=01&t=0
+2019-01-01 17:38:03,608 - crawl_search - INFO - ==> save url: https://jobs.51job.com/linyi/109543844.html?s=01&t=0
+2019-01-01 17:38:03,618 - crawl_search - INFO - get url: https://jobs.51job.com/beijing-hdq/109543471.html?s=01&t=0
+2019-01-01 17:38:03,628 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing-hdq/109543471.html?s=01&t=0
+2019-01-01 17:38:03,635 - crawl_search - INFO - get url: https://jobs.51job.com/ningde/109543013.html?s=01&t=0
+2019-01-01 17:38:03,642 - crawl_search - INFO - ==> save url: https://jobs.51job.com/ningde/109543013.html?s=01&t=0
+2019-01-01 17:38:03,649 - crawl_search - INFO - get url: https://jobs.51job.com/qingdao-snq/109542066.html?s=01&t=0
+2019-01-01 17:38:03,656 - crawl_search - INFO - ==> save url: https://jobs.51job.com/qingdao-snq/109542066.html?s=01&t=0
+2019-01-01 17:38:03,669 - crawl_search - INFO - get url: https://jobs.51job.com/taiyuan/109541826.html?s=01&t=0
+2019-01-01 17:38:03,681 - crawl_search - INFO - ==> save url: https://jobs.51job.com/taiyuan/109541826.html?s=01&t=0
+2019-01-01 17:38:03,689 - crawl_search - INFO - get url: https://jobs.51job.com/wuhan-hsq/109491763.html?s=01&t=0
+2019-01-01 17:38:03,697 - crawl_search - INFO - ==> save url: https://jobs.51job.com/wuhan-hsq/109491763.html?s=01&t=0
+2019-01-01 17:38:03,742 - crawl_search - INFO - now sleep 0s
+2019-01-01 17:39:36,405 - crawl_search - INFO - now sleep 0s
+2019-01-01 17:39:36,906 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-byq/109267046.html?s=01&t=0
+2019-01-01 17:39:36,914 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-byq/109267046.html?s=01&t=0
+2019-01-01 17:39:36,922 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-jdq/109545537.html?s=01&t=0
+2019-01-01 17:39:36,929 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-jdq/109545537.html?s=01&t=0
+2019-01-01 17:39:36,936 - crawl_search - INFO - get url: https://jobs.51job.com/hangzhou-jgq/109523236.html?s=01&t=0
+2019-01-01 17:39:36,943 - crawl_search - INFO - ==> save url: https://jobs.51job.com/hangzhou-jgq/109523236.html?s=01&t=0
+2019-01-01 17:39:36,950 - crawl_search - INFO - get url: https://jobs.51job.com/ningbo/97376981.html?s=01&t=0
+2019-01-01 17:39:36,958 - crawl_search - INFO - ==> save url: https://jobs.51job.com/ningbo/97376981.html?s=01&t=0
+2019-01-01 17:39:36,964 - crawl_search - INFO - get url: https://jobs.51job.com/wuxi-bhq/109540650.html?s=01&t=0
+2019-01-01 17:39:36,976 - crawl_search - INFO - ==> save url: https://jobs.51job.com/wuxi-bhq/109540650.html?s=01&t=0
+2019-01-01 17:39:36,985 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen/109532336.html?s=01&t=0
+2019-01-01 17:39:36,994 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen/109532336.html?s=01&t=0
+2019-01-01 17:39:37,001 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai/109522787.html?s=01&t=0
+2019-01-01 17:39:37,008 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai/109522787.html?s=01&t=0
+2019-01-01 17:39:37,015 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai/109246711.html?s=01&t=0
+2019-01-01 17:39:37,021 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai/109246711.html?s=01&t=0
+2019-01-01 17:39:37,028 - crawl_search - INFO - get url: https://jobs.51job.com/hangzhou-bjq/108926610.html?s=01&t=0
+2019-01-01 17:39:37,035 - crawl_search - INFO - ==> save url: https://jobs.51job.com/hangzhou-bjq/108926610.html?s=01&t=0
+2019-01-01 17:39:37,044 - crawl_search - INFO - get url: https://jobs.51job.com/changsha-yhq/108656835.html?s=01&t=0
+2019-01-01 17:39:37,053 - crawl_search - INFO - ==> save url: https://jobs.51job.com/changsha-yhq/108656835.html?s=01&t=0
+2019-01-01 17:39:37,060 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-xhq/108576046.html?s=01&t=0
+2019-01-01 17:39:37,070 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-xhq/108576046.html?s=01&t=0
+2019-01-01 17:39:37,077 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai/108506226.html?s=01&t=0
+2019-01-01 17:39:37,084 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai/108506226.html?s=01&t=0
+2019-01-01 17:39:37,091 - crawl_search - INFO - get url: https://jobs.51job.com/jinshuiqu/107794982.html?s=01&t=0
+2019-01-01 17:39:37,098 - crawl_search - INFO - ==> save url: https://jobs.51job.com/jinshuiqu/107794982.html?s=01&t=0
+2019-01-01 17:39:37,105 - crawl_search - INFO - get url: https://jobs.51job.com/changsha-frq/106611929.html?s=01&t=0
+2019-01-01 17:39:37,117 - crawl_search - INFO - ==> save url: https://jobs.51job.com/changsha-frq/106611929.html?s=01&t=0
+2019-01-01 17:39:37,137 - crawl_search - INFO - get url: https://jobs.51job.com/jinan-szq/104349998.html?s=01&t=0
+2019-01-01 17:39:37,145 - crawl_search - INFO - ==> save url: https://jobs.51job.com/jinan-szq/104349998.html?s=01&t=0
+2019-01-01 17:39:37,156 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-xhq/99783883.html?s=01&t=0
+2019-01-01 17:39:37,164 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-xhq/99783883.html?s=01&t=0
+2019-01-01 17:39:37,171 - crawl_search - INFO - get url: https://jobs.51job.com/nanjing-qhq/97984960.html?s=01&t=0
+2019-01-01 17:39:37,178 - crawl_search - INFO - ==> save url: https://jobs.51job.com/nanjing-qhq/97984960.html?s=01&t=0
+2019-01-01 17:39:37,185 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-pdxq/85014051.html?s=01&t=0
+2019-01-01 17:39:37,193 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-pdxq/85014051.html?s=01&t=0
+2019-01-01 17:39:37,203 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-xhq/84472141.html?s=01&t=0
+2019-01-01 17:39:37,209 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-xhq/84472141.html?s=01&t=0
+2019-01-01 17:39:37,217 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai/78612285.html?s=01&t=0
+2019-01-01 17:39:37,225 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai/78612285.html?s=01&t=0
+2019-01-01 17:39:37,243 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai/97878037.html?s=01&t=0
+2019-01-01 17:39:37,254 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai/97878037.html?s=01&t=0
+2019-01-01 17:39:37,263 - crawl_search - INFO - get url: https://jobs.51job.com/beijing/97531954.html?s=01&t=0
+2019-01-01 17:39:37,270 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing/97531954.html?s=01&t=0
+2019-01-01 17:39:37,278 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai/106738191.html?s=01&t=0
+2019-01-01 17:39:37,285 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai/106738191.html?s=01&t=0
+2019-01-01 17:39:37,293 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-pdxq/98263743.html?s=01&t=0
+2019-01-01 17:39:37,300 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-pdxq/98263743.html?s=01&t=0
+2019-01-01 17:39:37,312 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen-lhxq/109126859.html?s=01&t=0
+2019-01-01 17:39:37,322 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen-lhxq/109126859.html?s=01&t=0
+2019-01-01 17:39:37,330 - crawl_search - INFO - get url: https://jobs.51job.com/shenzhen-nsq/109410032.html?s=01&t=0
+2019-01-01 17:39:37,338 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shenzhen-nsq/109410032.html?s=01&t=0
+2019-01-01 17:39:37,345 - crawl_search - INFO - get url: https://jobs.51job.com/qingdao-hdq/109513336.html?s=01&t=0
+2019-01-01 17:39:37,358 - crawl_search - INFO - ==> save url: https://jobs.51job.com/qingdao-hdq/109513336.html?s=01&t=0
+2019-01-01 17:39:37,366 - crawl_search - INFO - get url: https://jobs.51job.com/nanjing-pkq/109511209.html?s=01&t=0
+2019-01-01 17:39:37,375 - crawl_search - INFO - ==> save url: https://jobs.51job.com/nanjing-pkq/109511209.html?s=01&t=0
+2019-01-01 17:39:37,383 - crawl_search - INFO - get url: https://jobs.51job.com/nanjing-yhtq/107543011.html?s=01&t=0
+2019-01-01 17:39:37,390 - crawl_search - INFO - ==> save url: https://jobs.51job.com/nanjing-yhtq/107543011.html?s=01&t=0
+2019-01-01 17:39:37,398 - crawl_search - INFO - get url: https://jobs.51job.com/beijing/102985937.html?s=01&t=0
+2019-01-01 17:39:37,411 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing/102985937.html?s=01&t=0
+2019-01-01 17:39:37,420 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-mhq/108249937.html?s=01&t=0
+2019-01-01 17:39:37,427 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-mhq/108249937.html?s=01&t=0
+2019-01-01 17:39:37,434 - crawl_search - INFO - get url: https://jobs.51job.com/fuzhou-glq/104768062.html?s=01&t=0
+2019-01-01 17:39:37,441 - crawl_search - INFO - ==> save url: https://jobs.51job.com/fuzhou-glq/104768062.html?s=01&t=0
+2019-01-01 17:39:37,448 - crawl_search - INFO - get url: https://jobs.51job.com/zhengzhou/108910094.html?s=01&t=0
+2019-01-01 17:39:37,460 - crawl_search - INFO - ==> save url: https://jobs.51job.com/zhengzhou/108910094.html?s=01&t=0
+2019-01-01 17:39:37,467 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-hpq/108398754.html?s=01&t=0
+2019-01-01 17:39:37,474 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-hpq/108398754.html?s=01&t=0
+2019-01-01 17:39:37,483 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-cnq/106824192.html?s=01&t=0
+2019-01-01 17:39:37,491 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-cnq/106824192.html?s=01&t=0
+2019-01-01 17:39:37,499 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-thq/108817835.html?s=01&t=0
+2019-01-01 17:39:37,507 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-thq/108817835.html?s=01&t=0
+2019-01-01 17:39:37,515 - crawl_search - INFO - get url: https://jobs.51job.com/chengdu-gxq/97901078.html?s=01&t=0
+2019-01-01 17:39:37,522 - crawl_search - INFO - ==> save url: https://jobs.51job.com/chengdu-gxq/97901078.html?s=01&t=0
+2019-01-01 17:39:37,528 - crawl_search - INFO - get url: https://jobs.51job.com/xian-wyq/109320860.html?s=01&t=0
+2019-01-01 17:39:37,535 - crawl_search - INFO - ==> save url: https://jobs.51job.com/xian-wyq/109320860.html?s=01&t=0
+2019-01-01 17:39:37,543 - crawl_search - INFO - get url: https://jobs.51job.com/nanjing-xwq/108371951.html?s=01&t=0
+2019-01-01 17:39:37,553 - crawl_search - INFO - ==> save url: https://jobs.51job.com/nanjing-xwq/108371951.html?s=01&t=0
+2019-01-01 17:39:37,561 - crawl_search - INFO - get url: https://jobs.51job.com/xian-jjjs/108971373.html?s=01&t=0
+2019-01-01 17:39:37,576 - crawl_search - INFO - ==> save url: https://jobs.51job.com/xian-jjjs/108971373.html?s=01&t=0
+2019-01-01 17:39:37,586 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-pdxq/102612060.html?s=01&t=0
+2019-01-01 17:39:37,595 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-pdxq/102612060.html?s=01&t=0
+2019-01-01 17:39:37,603 - crawl_search - INFO - get url: https://jobs.51job.com/shanghai-pdxq/102598803.html?s=01&t=0
+2019-01-01 17:39:37,614 - crawl_search - INFO - ==> save url: https://jobs.51job.com/shanghai-pdxq/102598803.html?s=01&t=0
+2019-01-01 17:39:37,622 - crawl_search - INFO - get url: https://jobs.51job.com/xian/105258399.html?s=01&t=0
+2019-01-01 17:39:37,630 - crawl_search - INFO - ==> save url: https://jobs.51job.com/xian/105258399.html?s=01&t=0
+2019-01-01 17:39:37,637 - crawl_search - INFO - get url: https://jobs.51job.com/guangzhou-hpq/107491972.html?s=01&t=0
+2019-01-01 17:39:37,644 - crawl_search - INFO - ==> save url: https://jobs.51job.com/guangzhou-hpq/107491972.html?s=01&t=0
+2019-01-01 17:39:37,651 - crawl_search - INFO - get url: https://jobs.51job.com/qingdao-snq/90949061.html?s=01&t=0
+2019-01-01 17:39:37,660 - crawl_search - INFO - ==> save url: https://jobs.51job.com/qingdao-snq/90949061.html?s=01&t=0
+2019-01-01 17:39:37,671 - crawl_search - INFO - get url: https://jobs.51job.com/beijing-cyq/104281095.html?s=01&t=0
+2019-01-01 17:39:37,680 - crawl_search - INFO - ==> save url: https://jobs.51job.com/beijing-cyq/104281095.html?s=01&t=0
+2019-01-01 17:39:37,688 - crawl_search - INFO - get url: https://jobs.51job.com/zhengzhou/103396851.html?s=01&t=0
+2019-01-01 17:39:37,694 - crawl_search - INFO - ==> save url: https://jobs.51job.com/zhengzhou/103396851.html?s=01&t=0
+2019-01-01 17:39:37,701 - crawl_search - INFO - get url: https://jobs.51job.com/nanjing-xwq/109237705.html?s=01&t=0
+2019-01-01 17:39:37,708 - crawl_search - INFO - ==> save url: https://jobs.51job.com/nanjing-xwq/109237705.html?s=01&t=0
+2019-01-01 17:39:37,770 - crawl_search - INFO - now sleep 1s
+2019-01-01 17:40:40,950 - crawl_search - INFO - now sleep 1s
