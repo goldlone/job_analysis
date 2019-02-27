@@ -1,5 +1,7 @@
 package cn.goldlone.graduation.etl.entity;
 
+import java.io.Serializable;
+
 /**
  * Description: 前程无忧岗位招聘信息 <br/>
  * Copyright 2019 CN <br/>
@@ -9,28 +11,39 @@ package cn.goldlone.graduation.etl.entity;
  * @author CN
  * @version 1.0
  */
-public class JobInfoQianCheng51 {
+public class JobInfoQianCheng51 implements Serializable {
 
+  // 岗位名称
   private String title;
 
+  // 薪资
   private String salary;
 
+  // 关键词
   private String keywords;
 
+  // 岗位特色
   private String features;
 
+  // 岗位描述
   private String description;
 
+  // 企业名称
   private String company_name;
 
+  // 企业类型
   private String company_type;
 
+  // 企业规模
   private String company_scala;
 
+  // 企业领域
   private String company_trade;
 
+  // 企业描述
   private String company_description;
 
+  // 详细页URL
   private String url;
 
   public String getTitle() {

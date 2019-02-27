@@ -2,7 +2,7 @@ package cn.goldlone.graduation.etl.utils
 
 import java.text.DecimalFormat
 
-import cn.goldlone.graduation.constant.JobLabel
+import cn.goldlone.graduation.constant.{JobLabel, JobPrimaryType, JobSubType}
 
 /**
   * Description: ETL工具类
@@ -27,34 +27,274 @@ object EtlUtil {
     */
   def getJobType(title: String): (String, String, Int) = {
     var jobType: String = null
+    val graduate: Int = isGraduate(title)
+    
+    var primaryType = JobPrimaryType.IT
+    jobType = markITJob(title)
+  
+//    title.toLowerCase match {
+//
+//      // 项目经理
+//      case x: String if x.contains("项目经理") ||
+//          x.contains("项目主任") ||
+//          x.contains("pm工程师") ||
+//          x.contains("pm-power") ||
+//          x.contains("project manager") =>
+//        jobType = JobLabel.PROJECT_MANAGER
+//
+//      // 产品经理
+//      case x: String if x.contains("产品经理") ||
+//          x.contains("product manager") =>
+//        jobType = JobLabel.PRODUCT_MANAGER
+//
+//      // 销售经理
+//      case x: String if x.contains("销售经理") ||
+//          x.contains("sales account manager") ||
+//          x.contains("sales manager") =>
+//        jobType = JobLabel.SALES_MANAGER
+//
+//      // 架构师
+//      case x: String if x.contains("架构") ||
+//          x.contains("高级工程师") ||
+//          x.contains("高级软件工程师") =>
+//        jobType = JobLabel.ARCHITECT
+//
+//      // 大数据
+//      case x: String if x.contains("大数据") ||
+//          x.contains("数据仓库") ||
+//          x.contains("数仓") ||
+//          x.contains("hadoop") ||
+//          x.contains("etl") ||
+//          x.contains("spark") ||
+//          x.contains("可视化") ||
+//          x.contains("数据工程师") ||
+//          x.contains("数据开发") ||
+//          x.contains("data and analytics") ||
+//          x.contains("big data") ||
+//          x.contains("数据专员") ||
+//          x.contains("统计分析") ||
+//          x.contains("数据统计") ||
+//          x.contains("数据处理") ||
+//          x.contains("bi工程师") ||
+//          x.contains("data engineer") ||
+//          x.contains("数据平台") =>
+//        jobType = JobLabel.BIG_DATA
+//
+//      // 前端
+//      case x: String if x.contains("前端") ||
+//          x.contains("h5") ||
+//          x.contains("html5") ||
+//          x.contains("web") ||
+//          x.contains("nodejs") ||
+//          x.contains("node.js") ||
+//          x.contains("vue") =>
+//        jobType = JobLabel.FRONT_END
+//
+//      // java
+//      case x: String if x.contains("java") =>
+//        jobType = JobLabel.JAVA
+//
+//      // php
+//      case x: String if x.contains("php") =>
+//        jobType = JobLabel.PHP
+//
+//      // 后端
+//      case x: String if x.contains("后端") ||
+//          x.contains(".net") ||
+//          x.contains("服务器端开发") ||
+//          x.contains("后台") =>
+//        jobType = JobLabel.BACK_END
+//
+//      // python
+//      case x: String if x.contains("python") =>
+//        jobType = JobLabel.PYTHON
+//
+//      // c/c++/c#
+//      case x: String if x.contains("c++") ||
+//          x.contains("c#") ||
+//          x.contains("c语言") =>
+//        jobType = JobLabel.C
+//
+//      // 算法
+//      case x: String if x.contains("算法") ||
+//          x.contains("人工智能") ||
+//          x.contains("nlp") ||
+//          x.contains("知识图谱") ||
+//          x.contains("舆情分析师") ||
+//          x.contains("语音识别") ||
+//          x.contains("自然语言处理") =>
+//        jobType = JobLabel.AI
+//
+//      // 数据分析
+//      case x: String if x.contains("数据挖掘") ||
+//          x.contains("数据分析") ||
+//          x.contains("数据建模") =>
+//        jobType = JobLabel.DATA_MINING
+//
+//      // 云计算
+//      case x: String if x.contains("云计算") ||
+//          x.contains("云系统") =>
+//        jobType = JobLabel.CLOUD_COMPUTING
+//
+//      // 区块链
+//      case x: String if x.contains("区块链") =>
+//        jobType = JobLabel.BLOCK_CHAIN
+//
+//      // 数据库
+//      case x: String if x.contains("数据库") ||
+//          x.contains("dba") =>
+//        jobType = JobLabel.DATABASE
+//
+//      // 硬件
+//      case x: String if x.contains("硬件") ||
+//          x.contains("嵌入式") ||
+//          x.contains("单片机") ||
+//          x.contains("物联网") ||
+//          x.contains("fpga") =>
+//        jobType = JobLabel.HARDWARE
+//
+//      // 运维
+//      case x: String if x.contains("运维") =>
+//        jobType = JobLabel.OPERATION_AND_MAINTENANCE
+//
+//      // 测试
+//      case x: String if x.contains("测试") =>
+//        jobType = JobLabel.TEST_ENGINEER
+//
+//      // 爬虫
+//      case x: String if x.contains("爬虫") =>
+//        jobType = JobLabel.CRAWLER
+//
+//      // 移动开发
+//      case x: String if x.contains("android") ||
+//          x.contains("ios") ||
+//          x.contains("app") ||
+//          x.contains("手机软件") ||
+//          x.contains("安卓") ||
+//          x.contains("移动开发") =>
+//        jobType = JobLabel.ANDROID_IOS
+//
+//      // UI
+//      case x: String if x.contains("平面") ||
+//          x.contains("视觉") ||
+//          x.contains("美工") ||
+//          x.contains("设计") =>
+//        jobType = JobLabel.UI
+//
+//      // 网络主管
+//      case x: String if x.contains("网络主管") =>
+//        jobType = JobLabel.NETWORK_MANAGE
+//
+//      // 内容运营
+//      case x: String if x.contains("运营") ||
+//          x.contains("seo") =>
+//        jobType = JobLabel.CONTENT_SPECIALIST
+//
+//      // 小程序
+//      case x: String if x.contains("小程序") =>
+//        jobType = JobLabel.MINI_PROGRAM
+//
+//      // 游戏
+//      case x: String if x.contains("游戏") ||
+//          x.contains("unity3d") ||
+//          x.contains("unity") =>
+//        jobType = JobLabel.GAME
+//
+//      // 软件工程师
+//      case x: String if x.contains("软件工程师") ||
+//          x.contains("software engineer") ||
+//          x.contains("软件研发工程师") ||
+//          x.contains("开发工程师") ||
+//          x.contains("研发工程师") ||
+//          x.contains("erp工程师") ||
+//          x.contains("it engineer") ||
+//          x.contains("程序员") ||
+//          x.contains("计算机工程师") ||
+//          x.contains("需求工程师") ||
+//          x.contains("it系统工程师") ||
+//          x.contains("it工程师") ||
+//          x.contains("需求分析") ||
+//          x.contains("erp专员") ||
+//          x.contains("软件开发") =>
+//        jobType = JobLabel.SOFTWARE_ENGINEER
+//
+//      // 技术支持
+//      case x: String if x.contains("技术支持") ||
+//          x.contains("it support engineer") ||
+//          x.contains("it支持") ||
+//          x.contains("it服务") =>
+//        jobType = JobLabel.SUPPORT_ENGINEER
+//
+//      // 老师
+//      case x: String if x.contains("老师") ||
+//          x.contains("教师") ||
+//          x.contains("讲师") ||
+//          x.contains("teacher") ||
+//          x.contains("校长") ||
+//          x.contains("助教") =>
+//        jobType = JobLabel.TEACHER
+//
+//      // 销售
+//      case x: String if x.contains("销售") ||
+//          x.contains("市场") =>
+//        jobType = JobLabel.SALES
+//
+//      // 财务
+//      case x: String if x.contains("财务") ||
+//          x.contains("会计") =>
+//        jobType = JobLabel.FINANCE
+//
+//      // 人事
+//      case x: String if x.contains("人事") ||
+//          x.contains("hr") ||
+//          x.contains("人力资源") =>
+//        jobType = JobLabel.PERSONNEL
+//
+//      // 后期
+//      case x: String if x.contains("摄影") ||
+//          x.contains("后期") =>
+//        jobType = JobLabel.POST_PROCESSING
+//
+//      // 总裁、总监
+//      case x: String if x.contains("总裁") ||
+//          x.contains("总监") ||
+//          x.contains("负责人") ||
+//          x.contains("主任") ||
+//          x.contains("经理") ||
+//          x.contains("副总") ||
+//          x.contains("主管") =>
+//        jobType = JobLabel.BOSS
+//
+      // 实习生
+//      case x: String if x.contains("实习") ||
+//          x.contains("应届") ||
+//          x.contains("校招") =>
+//        jobType = JobLabel.FRESH_GRADUATE
+//
+//      case _ =>
+//        jobType = JobLabel.UNKNOWN
+//        println(s"未匹配岗位名: [$title]")
+//    }
+    
+    (primaryType, jobType, graduate)
+  }
+  
+  
+  private def markITJob(title: String): String = {
+    var jobType: String = null
   
     title.toLowerCase match {
-    
+  
       // 项目经理
       case x: String if x.contains("项目经理") ||
           x.contains("项目主任") ||
           x.contains("pm工程师") ||
           x.contains("pm-power") ||
-          x.contains("project manager") =>
-        jobType = JobLabel.PROJECT_MANAGER
-    
-      // 产品经理
-      case x: String if x.contains("产品经理") ||
-          x.contains("product manager") =>
-        jobType = JobLabel.PRODUCT_MANAGER
-    
-      // 销售经理
-      case x: String if x.contains("销售经理") ||
-          x.contains("sales account manager") ||
-          x.contains("sales manager") =>
-        jobType = JobLabel.SALES_MANAGER
-    
-      // 架构师
-      case x: String if x.contains("架构") ||
-          x.contains("高级工程师") ||
-          x.contains("高级软件工程师") =>
-        jobType = JobLabel.ARCHITECT
-    
+          x.contains("project manager") ||
+          x.contains("产品经理") ||
+          x.contains("product manager")  =>
+        jobType = JobSubType.IT_PM
+        
       // 大数据
       case x: String if x.contains("大数据") ||
           x.contains("数据仓库") ||
@@ -67,15 +307,20 @@ object EtlUtil {
           x.contains("数据开发") ||
           x.contains("data and analytics") ||
           x.contains("big data") ||
-          x.contains("数据专员") ||
-          x.contains("统计分析") ||
-          x.contains("数据统计") ||
           x.contains("数据处理") ||
+          x.contains("数据研究") ||
           x.contains("bi工程师") ||
           x.contains("data engineer") ||
           x.contains("数据平台") =>
-        jobType = JobLabel.BIG_DATA
-    
+        jobType = JobSubType.IT_BIG_DATA
+  
+      // 数据分析
+      case x: String if x.contains("数据专员") ||
+          x.contains("统计分析") ||
+          x.contains("数据统计") ||
+          x.contains("数据分析") =>
+        jobType = JobSubType.IT_DATA_ANALYSIS
+      
       // 前端
       case x: String if x.contains("前端") ||
           x.contains("h5") ||
@@ -83,34 +328,43 @@ object EtlUtil {
           x.contains("web") ||
           x.contains("nodejs") ||
           x.contains("node.js") ||
+          x.contains("flash") ||
+          x.contains("javascript") ||
+          x.contains("js") ||
+          x.contains("front end") ||
+          x.contains("css") ||
           x.contains("vue") =>
-        jobType = JobLabel.FRONT_END
-    
+        jobType = JobSubType.IT_FRONT_END
+  
       // java
       case x: String if x.contains("java") =>
-        jobType = JobLabel.JAVA
-    
+        jobType = JobSubType.IT_JAVA
+  
       // php
       case x: String if x.contains("php") =>
-        jobType = JobLabel.PHP
-    
-      // 后端
-      case x: String if x.contains("后端") ||
-          x.contains(".net") ||
-          x.contains("服务器端开发") ||
-          x.contains("后台") =>
-        jobType = JobLabel.BACK_END
-    
+        jobType = JobSubType.IT_PHP
+  
+//      // 后端
+//      case x: String if x.contains("后端") ||
+//          x.contains(".net") ||
+//          x.contains("服务器端开发") ||
+//          x.contains("后台") =>
+//        jobType = JobLabel.BACK_END
+  
       // python
       case x: String if x.contains("python") =>
-        jobType = JobLabel.PYTHON
-    
+        jobType = JobSubType.IT_PYTHON
+  
       // c/c++/c#
       case x: String if x.contains("c++") ||
           x.contains("c#") ||
           x.contains("c语言") =>
         jobType = JobLabel.C
-    
+      
+      // 后端工程师Go
+      case x: String if x.contains("go") =>
+        jobType = JobSubType.IT_GO
+        
       // 算法
       case x: String if x.contains("算法") ||
           x.contains("人工智能") ||
@@ -118,49 +372,60 @@ object EtlUtil {
           x.contains("知识图谱") ||
           x.contains("舆情分析师") ||
           x.contains("语音识别") ||
-          x.contains("自然语言处理") =>
-        jobType = JobLabel.AI
-    
-      // 数据分析
-      case x: String if x.contains("数据挖掘") ||
-          x.contains("数据分析") ||
-          x.contains("数据建模") =>
-        jobType = JobLabel.DATA_MINING
-    
+          x.contains("自然语言处理") ||
+          x.contains("数据挖掘") =>
+        jobType = JobSubType.IT_ALGORITHM
+  
       // 云计算
       case x: String if x.contains("云计算") ||
           x.contains("云系统") =>
-        jobType = JobLabel.CLOUD_COMPUTING
-    
+        jobType = JobSubType.IT_CLOUD_COMPUTING
+  
       // 区块链
       case x: String if x.contains("区块链") =>
-        jobType = JobLabel.BLOCK_CHAIN
-    
+        jobType = JobSubType.IT_BLOCK_CHAIN
+  
       // 数据库
       case x: String if x.contains("数据库") ||
           x.contains("dba") =>
-        jobType = JobLabel.DATABASE
-    
-      // 硬件
+        jobType = JobSubType.IT_DATABASE
+  
+      // 硬件工程师
       case x: String if x.contains("硬件") ||
           x.contains("嵌入式") ||
           x.contains("单片机") ||
           x.contains("物联网") ||
+          x.contains("自动化") ||
+          x.contains("电路设计") ||
+          x.contains("驱动开发") ||
+          x.contains("ARM") ||
+          x.contains("DSP") ||
+          x.contains("射频工程师") ||
+          x.contains("电子工程师") ||
+          x.contains("电气工程师") ||
           x.contains("fpga") =>
-        jobType = JobLabel.HARDWARE
-    
-      // 运维
-      case x: String if x.contains("运维") =>
-        jobType = JobLabel.OPERATION_AND_MAINTENANCE
-    
+        jobType = JobSubType.IT_HARDWARE
+  
+      // 运维/技术支持
+      case x: String if x.contains("运维") ||
+          x.contains("网络主管") ||
+          x.contains("网络工程师") ||
+          x.contains("技术支持") =>
+        jobType = JobSubType.IT_OPERATION_AND_SUPPORT
+        
+      // 网络信息安全
+      case x: String if x.contains("信息安全") ||
+          x.contains("网络安全") =>
+        jobType = JobSubType.IT_INFO_SAFE
+  
       // 测试
       case x: String if x.contains("测试") =>
-        jobType = JobLabel.TEST_ENGINEER
-    
+        jobType = JobSubType.IT_TEST
+  
       // 爬虫
       case x: String if x.contains("爬虫") =>
-        jobType = JobLabel.CRAWLER
-    
+        jobType = JobSubType.IT_CRAWLER
+  
       // 移动开发
       case x: String if x.contains("android") ||
           x.contains("ios") ||
@@ -168,117 +433,64 @@ object EtlUtil {
           x.contains("手机软件") ||
           x.contains("安卓") ||
           x.contains("移动开发") =>
-        jobType = JobLabel.ANDROID_IOS
-    
+        jobType = JobSubType.IT_APP
+        
+      // 游戏开发
+      case x: String if x.contains("游戏") ||
+          x.contains("Unity") =>
+        jobType = JobSubType.IT_GAME
+        
       // UI
       case x: String if x.contains("平面") ||
           x.contains("视觉") ||
-          x.contains("美工") ||
-          x.contains("设计") =>
-        jobType = JobLabel.UI
-    
-      // 网络主管
-      case x: String if x.contains("网络主管") =>
-        jobType = JobLabel.NETWORK_MANAGE
-    
+          x.contains("美工") =>
+        jobType = JobSubType.IT_UI
+        
       // 内容运营
-      case x: String if x.contains("运营") ||
-          x.contains("seo") =>
-        jobType = JobLabel.CONTENT_SPECIALIST
-    
-      // 小程序
-      case x: String if x.contains("小程序") =>
-        jobType = JobLabel.MINI_PROGRAM
-    
-      // 游戏
-      case x: String if x.contains("游戏") ||
-          x.contains("unity3d") ||
-          x.contains("unity") =>
-        jobType = JobLabel.GAME
-    
-      // 软件工程师
-      case x: String if x.contains("软件工程师") ||
-          x.contains("software engineer") ||
-          x.contains("软件研发工程师") ||
-          x.contains("开发工程师") ||
-          x.contains("研发工程师") ||
-          x.contains("erp工程师") ||
-          x.contains("it engineer") ||
-          x.contains("程序员") ||
-          x.contains("计算机工程师") ||
-          x.contains("需求工程师") ||
-          x.contains("it系统工程师") ||
-          x.contains("it工程师") ||
-          x.contains("需求分析") ||
-          x.contains("erp专员") ||
-          x.contains("软件开发") =>
-        jobType = JobLabel.SOFTWARE_ENGINEER
-    
-      // 技术支持
-      case x: String if x.contains("技术支持") ||
-          x.contains("it support engineer") ||
-          x.contains("it支持") ||
-          x.contains("it服务") =>
-        jobType = JobLabel.SUPPORT_ENGINEER
-    
-      // 老师
-      case x: String if x.contains("老师") ||
-          x.contains("教师") ||
-          x.contains("讲师") ||
-          x.contains("teacher") ||
-          x.contains("校长") ||
-          x.contains("助教") =>
-        jobType = JobLabel.TEACHER
-    
-      // 销售
-      case x: String if x.contains("销售") ||
-          x.contains("市场") =>
-        jobType = JobLabel.SALES
-    
-      // 财务
-      case x: String if x.contains("财务") ||
-          x.contains("会计") =>
-        jobType = JobLabel.FINANCE
-    
-      // 人事
-      case x: String if x.contains("人事") ||
-          x.contains("hr") ||
-          x.contains("人力资源") =>
-        jobType = JobLabel.PERSONNEL
-    
-      // 后期
-      case x: String if x.contains("摄影") ||
-          x.contains("后期") =>
-        jobType = JobLabel.POST_PROCESSING
-    
-      // 总裁、总监
-      case x: String if x.contains("总裁") ||
-          x.contains("总监") ||
-          x.contains("负责人") ||
-          x.contains("主任") ||
-          x.contains("经理") ||
-          x.contains("副总") ||
-          x.contains("主管") =>
-        jobType = JobLabel.BOSS
-    
-      // 实习生
-      case x: String if x.contains("实习") ||
-          x.contains("应届") ||
-          x.contains("校招") =>
-        jobType = JobLabel.FRESH_GRADUATE
-    
+      case x: String if x.contains("内容运营") ||
+          x.contains("运营专员") ||
+          x.contains("新媒体运营") ||
+          x.contains("编辑") =>
+        jobType = JobSubType.IT_CONTENT_OPERATION
+        
+      // 电商运营
+      case x: String if x.contains("电商运营") ||
+          x.contains("淘宝运营") ||
+          x.contains("天猫运营") ||
+          x.contains("淘宝客服") =>
+        jobType = JobSubType.IT_E_COMMERCE_OPERATION
+        
+      // 其他运营
+      case x: String if x.contains("产品运营") ||
+          x.contains("游戏运营") ||
+          x.contains("其他运营") =>
+        jobType = JobSubType.IT_OTHER_OPERATION
+  
       case _ =>
-        jobType = JobLabel.UNKNOWN
-//        println(s"未匹配岗位名: [$title]")
+        jobType = JobSubType.UNKNOWN;
     }
     
-    ("一级分类", jobType, 0)
+    
+    
+    jobType
+  }
+  
+  
+  private def isGraduate(title: String): Int = {
+    if(title.contains("实习") ||
+        title.contains("应届") ||
+        title.contains("校招") ||
+        title.contains("秋招") ||
+        title.contains("春招"))
+      1
+    else
+      0
   }
   
   /**
     * 提取薪资，薪资范围则取中间值
     * @param salary 薪资信息
-    * @return 月工资
+    * @return (小，大，中)
     */
   def getSalary(salary: String): (Double, Double, Double) = {
   

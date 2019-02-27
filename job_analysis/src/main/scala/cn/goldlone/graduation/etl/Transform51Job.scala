@@ -2,7 +2,7 @@ package cn.goldlone.graduation.etl
 
 import java.io.File
 
-import cn.goldlone.graduation.constant.DataConfig
+import cn.goldlone.graduation.constant.{DataConfig, JobSubType}
 import cn.goldlone.graduation.etl.entity.JobInfoQianCheng51
 import cn.goldlone.graduation.etl.utils.EtlUtil
 import com.alibaba.fastjson.JSON
@@ -30,9 +30,9 @@ object Transform51Job {
     val sc = new SparkContext(conf)
     
     val dataPath = DataConfig.DATA_SOURCE
-    val okPath = DataConfig.DATA_SOURCE_OK
+    val etlPath = DataConfig.DATA_SOURCE_ETL
     
-    val f = new File(okPath)
+    val f = new File(etlPath)
     if(f.exists()) {
       if(f.isDirectory){
         for (ff <- f.listFiles())
@@ -43,11 +43,10 @@ object Transform51Job {
     
     val linesRDD = sc.textFile(dataPath)
     
-    // 转换并保存
     linesRDD.mapPartitions(it => {
-      val jobClass = new JobInfoQianCheng51().getClass
       
       val list = new scala.collection.mutable.ListBuffer[String]()
+      val jobClass = new JobInfoQianCheng51().getClass
       
       it.foreach(elem => {
         if(elem != null && !"".equals(elem)) {
@@ -57,61 +56,61 @@ object Transform51Job {
             // 岗位类型
             val jobType = EtlUtil.getJobType(jobInfo.getTitle)
             
-            // 薪资状况
-            val salary = EtlUtil.getSalary(jobInfo.getSalary)
-            val minSalary = salary._1
-            val maxSalary = salary._2
-            val midSalary = salary._3
-            
-            // (工作地点, 工作经验, 学历, 发布时间)
-            val keywords = EtlUtil.parseKeywords(jobInfo.getKeywords)
-            
-            // 工作地点
-            val address = keywords._1
-            
-            // 工作经验
-            val experience = keywords._2
-            
-            // 学历
-            var education = keywords._3
-            if(education.equals("unknown")) {
-              // 关键词中未检测到学历信息，则从描述信息中查找
-              education = EtlUtil.detectEducation(jobInfo.getDescription)
+            if(!JobSubType.UNKNOWN.equals(jobType._2)) {
+              // 薪资状况
+              val salary = EtlUtil.getSalary(jobInfo.getSalary)
+              val minSalary = salary._1
+              val maxSalary = salary._2
+              val midSalary = salary._3
+  
+              // (工作地点, 工作经验, 学历, 发布时间)
+              val keywords = EtlUtil.parseKeywords(jobInfo.getKeywords)
+  
+              // 工作地点
+              val address = keywords._1
+  
+              // 工作经验
+              val experience = keywords._2
+  
+              // 学历
+              var education = keywords._3
+              if(education.equals("unknown")) {
+                // 关键词中未检测到学历信息，则从描述信息中查找
+                education = EtlUtil.detectEducation(jobInfo.getDescription)
+              }
+  
+              // 发布时间
+              val date = keywords._4
+  
+              val buffer = new StringBuilder()
+              buffer.append(date).append("\u0001")                          // 发布时间
+                  .append(jobInfo.getTitle).append("\u0001")                // 岗位名称
+                  .append(jobType._1).append("\u0001")                      // 岗位一级类别
+                  .append(jobType._2).append("\u0001")                      // 岗位二级类别
+                  .append(jobType._3).append("\u0001")                      // 岗位是否是实习生
+                  .append(minSalary).append("\u0001")                       // 薪资下限
+                  .append(maxSalary).append("\u0001")                       // 薪资上限
+                  .append(midSalary).append("\u0001")                       // 薪资中值
+                  .append(address).append("\u0001")                         // 工作地点
+                  .append(experience).append("\u0001")                      // 工作经验
+                  .append(education).append("\u0001")                       // 学历
+                  .append(jobInfo.getFeatures).append("\u0001")             // 岗位特色
+                  .append(jobInfo.getDescription).append("\u0001")          // 岗位描述
+                  .append(jobInfo.getCompany_name).append("\u0001")         // 企业名称
+                  .append(jobInfo.getCompany_type).append("\u0001")         // 企业类型
+                  .append(jobInfo.getCompany_scala).append("\u0001")        // 企业规模
+                  .append(jobInfo.getCompany_trade).append("\u0001")        // 企业领域
+                  .append(jobInfo.getCompany_description).append("\u0001")  // 企业描述
+                  .append(jobInfo.getUrl)                                   // 招聘链接
+  
+              list.append(buffer.toString())
             }
-            
-            // 发布时间
-            val date = keywords._4
-            
-            // 岗位名称、类型、薪资、工作地点、工作经验、学历要求、发布时间、岗位特色
-            // 岗位描述、企业名称、企业类型、企业规模、企业领域、企业描述
-            val buffer = new StringBuilder()
-            buffer.append(date).append("\u0001")
-                .append(jobInfo.getTitle).append("\u0001")
-                .append(jobType._1).append("\u0001")
-                .append(jobType._2).append("\u0001")
-                .append(jobType._3).append("\u0001")
-                .append(minSalary).append("\u0001")
-                .append(maxSalary).append("\u0001")
-                .append(midSalary).append("\u0001")
-                .append(address).append("\u0001")
-                .append(experience).append("\u0001")
-                .append(education).append("\u0001")
-                .append(jobInfo.getFeatures).append("\u0001")
-                .append(jobInfo.getDescription).append("\u0001")
-                .append(jobInfo.getCompany_name).append("\u0001")
-                .append(jobInfo.getCompany_type).append("\u0001")
-                .append(jobInfo.getCompany_scala).append("\u0001")
-                .append(jobInfo.getCompany_trade).append("\u0001")
-                .append(jobInfo.getCompany_description).append("\u0001")
-                .append(jobInfo.getUrl)
-    
-            list.append(buffer.toString())
           }
         }
       })
     
       list.iterator
-    }).saveAsTextFile(okPath)
+    }).saveAsTextFile(etlPath)
   
   
     sc.stop()

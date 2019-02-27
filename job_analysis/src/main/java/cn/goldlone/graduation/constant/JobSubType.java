@@ -12,124 +12,100 @@ import java.util.HashMap;
  * @version 1.0
  */
 public class JobSubType {
-  // 互联网IT
-//  public static final String UN = "Java开发";
-//  public static final String UN = "UI设计师";
-//  public static final String UN = "Web前端";
-//  public static final String UN = "PHP";
-//  public static final String UN = "Python";
-//  public static final String UN = "Android";
-//  public static final String UN = "美工";
-//  public static final String UN = "深度学习";
-//  public static final String UN = "算法工程师";
-//  public static final String UN = "Hadoop";
-//  public static final String UN = "Node.js";
-//  public static final String UN = "数据开发";
-//  public static final String UN = "数据分析师";
-//  public static final String UN = "数据架构";
-//  public static final String UN = "人工智能";
-//  public static final String UN = "区块链";
-//  public static final String UN = "电气工程师";
-//  public static final String UN = "电子工程师";
-//  public static final String UN = "PLC";
-//  public static final String UN = "测试工程师";
-//  public static final String UN = "设备工程师";
-//  public static final String UN = "硬件工程师";
-//  public static final String UN = "结构工程师";
-//  public static final String UN = "工艺工程师";
-//  public static final String UN = "产品经理";
-//  public static final String UN = "新媒体运营";
-//  public static final String UN = "运营专员";
-//  public static final String UN = "淘宝运营";
-//  public static final String UN = "天猫运营";
-//  public static final String UN = "产品助理";
-//  public static final String UN = "产品运营";
-//  public static final String UN = "淘宝客服";
-//  public static final String UN = "游戏运营";
-//  public static final String UN = "编辑";
+
+  // 互联网IT - IT
+  public static final String IT_UI = "UI设计师-美工";
+  public static final String IT_FRONT_END = "Web前端";
+  public static final String IT_JAVA = "Java";
+  public static final String IT_PHP = "PHP";
+  public static final String IT_PYTHON = "Python";
+  public static final String IT_GO = "Go";
+  public static final String IT_C = "C-Cpp-CSharp";
+  public static final String IT_APP = "APP移动开发";
+  public static final String IT_ALGORITHM = "算法工程师";
+  public static final String IT_BIG_DATA = "大数据开发工程师";
+  public static final String IT_DATA_ANALYSIS = "数据分析";
+  public static final String IT_CLOUD_COMPUTING = "云计算";
+  public static final String IT_BLOCK_CHAIN = "区块链";
+  public static final String IT_DATABASE = "数据库";
+  public static final String IT_CRAWLER = "爬虫工程师";
+  public static final String IT_TEST = "测试工程师";
+  public static final String IT_HARDWARE = "硬件工程师";
+  public static final String IT_INFO_SAFE = "信息安全";
+  public static final String IT_GAME = "游戏开发";
+  public static final String IT_OPERATION_AND_SUPPORT = "运维-技术支持";
+  public static final String IT_PM = "项目经理";
+  public static final String IT_CONTENT_OPERATION = "内容运营";
+  public static final String IT_E_COMMERCE_OPERATION = "电商运营";
+  public static final String IT_OTHER_OPERATION = "其他运营";
+
+//  // 金融 - FINANCE
+//  public static final String FINANCE_INVESTMENT_MANAGER = "投资经理";
+//  public static final String FINANCE_risk_control = "风控";
+//  public static final String FINANCE_COLLECTION = "催收";
+//  public static final String FINANCE_BANK_TELLER = "银行柜员";
+//  public static final String FINANCE_BANK_SALES = "银行销售";
+//  public static final String FINANCE_CREDIT_OFFICER = "信审";
+//  public static final String FINANCE_CREDIT_CARD = "信用卡";
+//  public static final String FINANCE_LOANS = "贷款";
+//  public static final String FINANCE_CREDITS_LOANS = "信托-担保-拍卖-典当-信贷";
+//  public static final String FINANCE_TRADERS = "交易员";
+//  public static final String FINANCE_INSURANCE = "保险-车险-财产保险-保险销售";
+//  public static final String FINANCE_CLAIM_SETTLEMENT = "理赔-保险内勤-查勘定损";
+//  public static final String FINANCE_MANAGER_MONEY = "金融产品-基金-股票-证券-期货-投资-理财";
+//  public static final String FINANCE_TRADER = "操盘手";
+//  public static final String FINANCE_WARRANT = "权证";
+//  public static final String FINANCE_ACTUARY = "保险精算师";
+////  public static final String FINANCE_ = "金融研究";
 //
-//  // 金融
-//  public static final String UN = "投资经理";
-//  public static final String UN = "风控";
-//  public static final String UN = "催收";
-//  public static final String UN = "银行柜员";
-//  public static final String UN = "银行销售";
-//  public static final String UN = "信审";
-//  public static final String UN = "信用卡";
-//  public static final String UN = "贷款";
-//  public static final String UN = "金融产品";
-//  public static final String UN = "汽车金融";
-//  public static final String UN = "金融研究";
-//  public static final String UN = "证券";
-//  public static final String UN = "交易员";
-//  public static final String UN = "投资经理";
-//  public static final String UN = "期货";
-//  public static final String UN = "操盘手";
-//  public static final String UN = "基金";
-//  public static final String UN = "股票";
-//  public static final String UN = "投资顾问";
-//  public static final String UN = "信托";
-//  public static final String UN = "典当";
-//  public static final String UN = "担保";
-//  public static final String UN = "信贷";
-//  public static final String UN = "权证";
-//  public static final String UN = "财产保险";
-//  public static final String UN = "保险内勤";
-//  public static final String UN = "理赔";
-//  public static final String UN = "精算师";
-//  public static final String UN = "保险销售";
-//  public static final String UN = "理财顾问";
-//  public static final String UN = "查勘定损";
-//  public static final String UN = "车险";
+//  // 房地产_建筑 - REALTY
+//  public static final String REALTY_civil_engineer = "土建工程师";
+//  public static final String REALTY_construction_worker = "施工员";
+//  public static final String REALTY_librarian = "资料员";
+//  public static final String REALTY_budgeter = "预算员";
+//  public static final String REALTY_cost_engineer = "造价员";
+//  public static final String REALTY_primary_registered_construction_engineer = "一级建造师";
+//  public static final String REALTY_interior_designer = "室内设计师";
+//  public static final String REALTY_civil = "土建";
+//  public static final String REALTY_heating_and_ventilation = "暖通";
+////  public static final String REALTY_ = "项目经理";
+////  public static final String REALTY_ = "电气工程师";
+//  public static final String REALTY_building_design = "建筑设计";
+//  public static final String REALTY_property_consultant = "置业顾问";
+//  public static final String REALTY_real_estate_sales = "房地产销售";
+//  public static final String REALTY_Real_estate_investment_attraction = "房地产招商";
+//  public static final String REALTY_Construction_Application = "开发报建";
+//  public static final String REALTY_ = "房地产策划";
+//  public static final String REALTY_ = "房地产开发";
+//  public static final String REALTY_ = "房地产评估";
+//  public static final String REALTY_ = "地产经纪";
+//  public static final String REALTY_ = "物业";
+//  public static final String REALTY_ = "物业经理";
+//  public static final String REALTY_ = "保安";
+//  public static final String REALTY_ = "客服";
+//  public static final String REALTY_ = "物业管理";
+//  public static final String REALTY_ = "物业客服";
+//  public static final String REALTY_ = "电工";
+//  public static final String REALTY_ = "物业主管";
+//  public static final String REALTY_ = "物业维修";
+//  public static final String REALTY_ = "消防";
+//  public static final String REALTY_ = "客服主管";
+////  public static final String REALTY_ = "前台";
+////  public static final String REALTY_ = "文员";
+//  public static final String REALTY_ = "物业项目经理";
 //
-//  // 房地产_建筑
-//  public static final String UN = "土建工程师";
-//  public static final String UN = "施工员";
-//  public static final String UN = "资料员";
-//  public static final String UN = "预算员";
-//  public static final String UN = "造价员";
-//  public static final String UN = "一级建造师";
-//  public static final String UN = "室内设计师";
-//  public static final String UN = "土建";
-//  public static final String UN = "暖通";
-//  public static final String UN = "项目经理";
-//  public static final String UN = "电气工程师";
-//  public static final String UN = "建筑设计";
-//  public static final String UN = "置业顾问";
-//  public static final String UN = "房地产销售";
-//  public static final String UN = "房地产招商";
-//  public static final String UN = "开发报建";
-//  public static final String UN = "房地产策划";
-//  public static final String UN = "房地产开发";
-//  public static final String UN = "房地产评估";
-//  public static final String UN = "地产经纪";
-//  public static final String UN = "物业";
-//  public static final String UN = "物业经理";
-//  public static final String UN = "保安";
-//  public static final String UN = "客服";
-//  public static final String UN = "物业管理";
-//  public static final String UN = "物业客服";
-//  public static final String UN = "电工";
-//  public static final String UN = "物业主管";
-//  public static final String UN = "物业维修";
-//  public static final String UN = "消防";
-//  public static final String UN = "客服主管";
-//  public static final String UN = "前台";
-//  public static final String UN = "文员";
-//  public static final String UN = "物业项目经理";
-//
-//  // 贸易
-//  public static final String UN = "采购";
-//  public static final String UN = "外贸";
-//  public static final String UN = "外贸业务员";
-//  public static final String UN = "外贸跟单";
-//  public static final String UN = "采购助理";
-//  public static final String UN = "外贸日语";
-//  public static final String UN = "采购专员";
-//  public static final String UN = "外贸英语";
-//  public static final String UN = "外贸助理";
-//  public static final String UN = "采购经理";
-//  public static final String UN = "买手";
+//  // 贸易 - TRADE
+//  public static final String TRADE_procurement = "采购";
+//  public static final String TRADE_Foreign_trade = "外贸";
+//  public static final String TRADE_ = "外贸业务员";
+//  public static final String TRADE_ = "外贸跟单";
+//  public static final String TRADE_ = "采购助理";
+//  public static final String TRADE_ = "外贸日语";
+//  public static final String TRADE_ = "采购专员";
+//  public static final String TRADE_ = "外贸英语";
+//  public static final String TRADE_ = "外贸助理";
+//  public static final String TRADE_ = "采购经理";
+//  public static final String TRADE_ = "买手";
 //
 //  // 零售
 //  public static final String UN = "导购";
@@ -158,12 +134,11 @@ public class JobSubType {
 //  // 教育
 //  public static final String UN = "教师";
 //  public static final String UN = "英语老师";
-//  public static final String UN = "课程顾问";
-//  public static final String UN = "英语";
-//  public static final String UN = "教务";
 //  public static final String UN = "美术老师";
+//  public static final String UN = "课程顾问";
+//  public static final String UN = "教务";
 //  public static final String UN = "幼教";
-//  public static final String UN = "小学教师";
+////  public static final String UN = "小学教师";
 //  public static final String UN = "班主任";
 //  public static final String UN = "助教";
 //
@@ -221,79 +196,76 @@ public class JobSubType {
 //  public static final String UN = "婚礼策划";
 //  public static final String UN = "育婴师";
 //  public static final String UN = "催乳师";
-//  public static final String UN = "司机";
+//  public static final String UN_DRIVER = "司机";
 //
-//  // 市场
-//  public static final String UN = "市场营销";
-//  public static final String UN = "市场策划";
-//  public static final String UN = "市场顾问";
-//  public static final String UN = "市场总监";
-//  public static final String UN = "市场推广";
-//  public static final String UN = "SEO";
-//  public static final String UN = "品牌经理";
-//  public static final String UN = "SEM";
-//  public static final String UN = "商务渠道";
-//  public static final String UN = "网络营销";
-//  public static final String UN = "活动策划";
-//  public static final String UN = " APP推广";
+//  // 市场 - MARKET
+//  public static final String MARKET_ = "市场营销";
+//  public static final String MARKET_ = "市场策划";
+//  public static final String MARKET_ = "市场顾问";
+//  public static final String MARKET_ = "市场总监";
+//  public static final String MARKET_ = "市场推广";
+//  public static final String MARKET_ = "SEO";
+//  public static final String MARKET_ = "品牌经理";
+//  public static final String MARKET_ = "SEM";
+//  public static final String MARKET_ = "商务渠道";
+//  public static final String MARKET_ = "网络营销";
+//  public static final String MARKET_ = "活动策划";
+//  public static final String MARKET_ = " APP推广";
 //
-//  // 销售
-//  public static final String UN = "销售专员";
-//  public static final String UN = "销售经理";
-//  public static final String UN = "客户代表";
-//  public static final String UN = "销售代表";
-//  public static final String UN = "BD经理";
-//  public static final String UN = "大客户销售";
-//  public static final String UN = "渠道销售";
-//  public static final String UN = "销售助理";
-//  public static final String UN = "电话销售";
-//  public static final String UN = "销售顾问";
-//  public static final String UN = "商品经理";
-//  public static final String UN = "广告销售";
-//  public static final String UN = "网络营销";
-//  public static final String UN = "营销主管";
-//  public static final String UN = "销售总监";
-//  public static final String UN = "商务总监";
-//  public static final String UN = "城市经理";
+//  // 销售 - SALE
+//  public static final String SALE_MANAGER = "销售经理-总监";
+//  public static final String SALE_COUNSELOR = "销售顾问";
+//  public static final String SALE_COMMISSIONER = "销售专员";
+//  public static final String SALE_ASSISTANT = "销售助理";
+//  public static final String SALE_SALE_REPRESENTATIVE = "销售代表";
+//  public static final String SALE_CLIENT_REPRESENTATIVE = "客户代表";
+//  public static final String SALE_BD_MANAGER = "BD经理";
+//  public static final String SALE_KEY_ACCOUNTS_SALES = "大客户销售";
+//  public static final String SALE_CHANNEL_SALES = "渠道销售";
+//  public static final String SALE_TELESALES = "电话销售";
+//  public static final String SALE_COMMODITY_MANAGER = "商品经理";
+//  public static final String SALE_ADVERTISEMENT_SALES = "广告销售";
+//  public static final String SALE_NETWORK_MARKETING = "网络营销";
+//  public static final String SALE_MARKETING_MANAGER = "营销主管";
+//  public static final String SALE_CBO = "商务总监";
+//  public static final String SALE_CITY_MANAGER = "城市经理";
 //
-//  // 人事
-//  public static final String UN = "人力资源主管";
-//  public static final String UN = "招聘";
-//  public static final String UN = "HRBP";
-//  public static final String UN = "人力资源专员";
-//  public static final String UN = "培训";
-//  public static final String UN = "薪资福利";
-//  public static final String UN = "绩效考核";
-//  public static final String UN = "人力资源经理";
-//  public static final String UN = "人力资源总监";
-//  public static final String UN = "员工关系";
-//  public static final String UN = "组织发展";
+//  // 人事 - HR
+//  public static final String HR_MANAGER = "人力资源主管-经理-总监";
+//  public static final String HR_RECRUIT = "招聘";
+//  public static final String HR_HRBP = "HRBP";
+//  public static final String HR_COMMISSIONER = "人力资源专员";
+//  public static final String HR_TRAIN = "培训";
+////  public static final String HR_ = "薪资福利";
+//  public static final String HR_PERFORMANCE = "绩效考核";
+//  public static final String HR_EMPLOYEE_RELATIONS = "员工关系";
+//  public static final String HR_ORGANIZATION_DEVELOPMENT = "组织发展";
 //
-//  // 财务
-//  public static final String UN = "会计";
-//  public static final String UN = "出纳";
-//  public static final String UN = "财务顾问";
-//  public static final String UN = "结算";
-//  public static final String UN = "税务";
-//  public static final String UN = "风控";
-//  public static final String UN = "财务经理";
-//  public static final String UN = "财务主管";
-//  public static final String UN = "财务分析";
-//  public static final String UN = "法务专员";
-//  public static final String UN = "律师";
-//  public static final String UN = "法律顾问";
-//  public static final String UN = "法务主管";
+//  // 财务 - FINANCE
+//  public static final String FINANCE_MANAGER = "财务经理-主管";
+//  public static final String FINANCE_COUNSELOR = "财务顾问";
+//  public static final String FINANCE_ACCOUNTANT = "会计";
+//  public static final String FINANCE_CASHIER = "出纳";
+//  public static final String FINANCE_SETTLEMENT = "结算";
+//  public static final String FINANCE_TAX_ADMINISTRATION = "税务";
+//  public static final String FINANCE_ANALYSIS = "财务分析";
 //
-//  // 行政
-//  public static final String UN = "行政专员";
-//  public static final String UN = "前台";
-//  public static final String UN = "行政主管";
-//  public static final String UN = "经理助理";
-//  public static final String UN = "后勤";
-//  public static final String UN = "司机";
-//  public static final String UN = "行政经理";
-//  public static final String UN = "行政总监";
+//  // 法务 - LEGAL
+//  public static final String LEGAL_COMMISSIONER = "法务专员";
+//  public static final String LEGAL_LAWYER = "律师";
+//  public static final String LEGAL_COUNSELOR = "法律顾问";
+//  public static final String LEGAL_MASTER = "法务主管";
+//
+//  // 行政 - ADMINISTRATION
+//  public static final String ADMINISTRATION_MANAGER = "行政经理-总监-主管";
+//  public static final String ADMINISTRATION_DIRECTOR = "行政总监";
+//  public static final String ADMINISTRATION_MASTER = "行政主管";
+//  public static final String ADMINISTRATION_COMMISSIONER = "行政专员";
+//  public static final String ADMINISTRATION_ASSISTANT = "经理助理";
+//  public static final String ADMINISTRATION_RECEPTION = "前台";
+//  public static final String ADMINISTRATION_LOGISTICS = "后勤";
 
 
+  public static final String UNKNOWN = "unknown";
 
 }
